@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JC2 Theory Practice Set 2 (2026) | H2 Computing 9569/01</title>
+<title>JC2 Theory Practice (2026) | H2 Computing 9569/01</title>
 <style>
 :root{--ink:#1b2430;--muted:#5b6675;--accent:#2f5bea;--bg:#f4f6fb;--card:#fff;--line:#e3e7ef}
 *{box-sizing:border-box}
@@ -13,39 +13,80 @@ header{background:linear-gradient(135deg,#1e3a8a,#2f5bea 60%,#5b8def);color:#fff
 h1{margin:0 0 8px;font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.2}
 header p{margin:0;opacity:.9;font-size:1.05rem}
 main{max-width:760px;margin:-40px auto 40px;padding:0 16px}
-.cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-.card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;text-decoration:none;color:inherit;box-shadow:0 4px 14px rgba(20,30,60,.07);transition:transform .15s,box-shadow .15s}
+.set{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 4px 14px rgba(20,30,60,.07);margin-bottom:28px}
+.set-head{display:flex;align-items:baseline;gap:12px;margin:0 0 16px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.set-head h2{margin:0;font-size:1.3rem}
+.set-head span{color:var(--muted);font-size:.9rem}
+.set2 .set-head h2{color:#1e3a8a}
+.set1{background:#f9fafc}
+.set1 .set-head h2{color:#0f766e}
+.cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s}
 .card:hover,.card:focus{transform:translateY(-3px);box-shadow:0 10px 24px rgba(20,30,60,.13);outline:none}
 .icon{width:44px;height:44px;border-radius:10px;background:#eaf0ff;color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:14px}
-.card h2{margin:0 0 14px;font-size:1.15rem}
-.btn{color:var(--accent);font-weight:600;font-size:.95rem}
+.set1 .icon{background:#e0f2ef;color:#0f766e}
+.set1 .btn{color:#0f766e}
+.card h3{margin:0 0 14px;font-size:1.1rem}
+.btn{margin-top:auto;color:var(--accent);font-weight:600;font-size:.95rem}
 footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 16px 40px}
+@media (min-width:900px){
+  header{padding:72px 32px 96px}
+  header p{font-size:1.2rem}
+  main{max-width:1180px;margin-top:-56px;padding:0 32px}
+  .set{padding:32px;margin-bottom:36px}
+  .set-head h2{font-size:1.6rem}
+  .set-head span{font-size:1rem}
+  .cards{gap:24px;grid-template-columns:repeat(3,1fr)}
+  .card{padding:32px;min-height:200px}
+  .icon{width:56px;height:56px;font-size:1.15rem;border-radius:12px;margin-bottom:18px}
+  .card h3{font-size:1.35rem}
+  .btn{font-size:1.05rem}
+  footer{font-size:.95rem}
+}
 </style>
 </head>
 <body>
 <header>
 <span class="tag">2026 JC2 &middot; Timed Practice</span>
-<h1>JC2 Theory Practice Set 2</h1>
+<h1>JC2 Theory Practice</h1>
 <p>H2 Computing 9569/01 &middot; Paper 1</p>
 </header>
 <main>
+<section class="set set2">
+<div class="set-head"><h2>Set 2</h2><span>Paper 1</span></div>
 <div class="cards">
 <a class="card" href="2026_JPJC_JC2_Theory_Practice_Set2_P1.pdf">
 <div class="icon">QP</div>
-<h2>Question Paper</h2>
+<h3>Question Paper</h3>
 <span class="btn">Open PDF &rarr;</span>
 </a>
 <a class="card" href="2026_JPJC_JC2_Theory_Practice_Set2_P1_Suggested_Mark_Scheme.pdf">
 <div class="icon">MS</div>
-<h2>Suggested Mark Scheme</h2>
+<h3>Suggested Mark Scheme</h3>
 <span class="btn">Open PDF &rarr;</span>
 </a>
 <a class="card" href="Set2_P1_Video_Solutions.html">
 <div class="icon">&#9654;</div>
-<h2>Video Solutions</h2>
+<h3>Video Solutions</h3>
 <span class="btn">Watch walkthroughs &rarr;</span>
 </a>
 </div>
+</section>
+<section class="set set1">
+<div class="set-head"><h2>Set 1</h2><span>Paper 1</span></div>
+<div class="cards">
+<a class="card" href="2026_JPJC_JC2_Theory_Practice_Set1_P1.pdf">
+<div class="icon">QP</div>
+<h3>Question Paper</h3>
+<span class="btn">Open PDF &rarr;</span>
+</a>
+<a class="card" href="2026_JPJC_JC2_Theory_Practice_Set1_P1_MarkScheme.pdf">
+<div class="icon">MS</div>
+<h3>Suggested Mark Scheme</h3>
+<span class="btn">Open PDF &rarr;</span>
+</a>
+</div>
+</section>
 </main>
 <footer>JC2 H2 Computing &middot; Timed Practice Review 2026</footer>
 </body>
